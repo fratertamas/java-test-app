@@ -1,24 +1,14 @@
 package hu.frt.student.model;
 
+import lombok.Builder;
+import lombok.Data;
+
 import java.util.Date;
 
+@Data
+@Builder
 public class Student {
-    private String name;
+    private String firstName;
+    private String lastName;
     private Date bithday;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Date getBithday() {
-        return bithday;
-    }
-
-    public void setBithday(Date bithday) {
-        this.bithday = bithday;
-    }
 }
